@@ -1,0 +1,27 @@
+{
+  "name": "drizzle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "db:generate": "npx drizzle-kit generate",
+    "db:migrate": "tsx src/drizzle/migrate.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "drizzle-kit": "^0.29.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.14",
+    "@types/node": "^22.10.1",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.37.0",
+    "postgres": "^3.4.5",
+    "tsx": "^4.19.2"
+  }
+}
